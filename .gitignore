@@ -1,0 +1,23 @@
+.vs
+
+# Rust
+target/
+Cargo.lock
+**/*.rs.bk
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+.env
+.DS_Store
+
+# Electron
+dist/
+out/
+*.log
+*.asar
+
+# React
+build/
