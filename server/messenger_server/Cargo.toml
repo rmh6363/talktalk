@@ -1,9 +1,32 @@
 [package]
 name = "messenger_server"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
-warp = "0.3"
-tokio = { version = "1", features = ["full"] }
-futures = "0.3"
+# Actix-web: 웹 서버 프레임워크
+actix-web = "4.0"
+# Actix-web-actors: WebSocket 지원
+actix-web-actors = "4.0"
+# Actix: Actor 모델 프레임워크
+actix = "0.14"
+
+# Serde: JSON 직렬화 및 역직렬화
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Tokio: 비동기 런타임
+tokio = { version = "1.0", features = ["full"] }
+
+# Logging
+log = "0.4"
+env_logger = "0.10"
+
+# Chrono: 시간/날짜 관리
+chrono = "0.4"
+
+# UUID: 고유 ID 생성
+uuid = { version = "1.0", features = ["v4"] }
+
+# 테스트를 위한 선택적 디펜던시 (선택)
+# actix-rt = "2.0" # 비동기 작업을 위한 런타임 (테스트에 유용)
